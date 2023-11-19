@@ -10,7 +10,7 @@ export default function SignInPage() {
     const HandleSubmit = async (UserName, Password, NickName, IsPrivate) => {
         debugger;
         let user = { UserName: UserName, NickName: NickName, Password: Password};
-        if (UserName === "chani&milca" && NickName === "myProject" && Password === "123456789") {
+        if (UserName === "admin" && NickName === "myProject" && Password === "123456789") {
             sessionStorage.setItem('UserId', 0);
             navigate('/adminPage');
         }

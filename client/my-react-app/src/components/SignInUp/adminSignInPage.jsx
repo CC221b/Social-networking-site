@@ -8,10 +8,10 @@ export default function SignUpPage() {
     const navigate = useNavigate();
 
     const HandleSubmit = (UserName, Password, NickName) => {
-        if (UserName==="chani&milca" && NickName==="myProject" && Password==="123456789") {
+        if (UserName==="admin" && NickName==="myProject" && Password==="123456789") {
             navigate('/adminPage');
         } else {
-            alert("user name or password are worng!");
+            alert("wrong username or password!");
         }
     }
 
